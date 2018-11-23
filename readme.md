@@ -8,14 +8,15 @@ Systems login:<br>
 Admin system:<br> 
 (After clicking "save" in each screen, the corresponding data changes will be saved to data file)<br>
     2) In Admin system main menu, you can choose one of four functions<br>
- 2.1)players: to display, add, delete, or edit player information.<br> 
+    
+2.1)players: to display, add, delete, or edit player information.<br> 
 1. Player's team information cannot be changed here.<br> 
 2. We have teams management to register or unregister a player to a team.<br>
 3. Any new player will be assigned "UR" team which means unregistered to any team. <br>
-4. Player's birthyear and gender cannot be edited instead you can delete then add a pleayer if you want to modify the birthyear or gender;<br&nbsp;&nbsp; &nbsp;&nbsp; >but this means the player will be removed from the current team and become "UR"<br><br>
+4. Player's birthyear and gender cannot be edited instead you can delete then add a pleayer if you want to modify the birthyear or gender<br>but this means the player will be removed from the current team and become "UR"<br><br>
 
 2.2)teams:  to display member list of each team and register a player to a team or unregister a player from current team.<br>
-1. First step is to search a player by id
+1. First step is to search a player by id<br>
 2. If the player is unregistered, now the textfield is locked and the combobox give the potential teams choices according to the player's age and gender<br>
 3. Also provide the demo function to register or unregister a coach(represented by a coach account.<br><br>
    
