@@ -18,8 +18,9 @@ Admin system:<br>
 2.2)teams:  to display member list of each team and register a player to a team or unregister a player from current team.<br>
 1. First step is to search a player by id<br>
 2. If the player is unregistered, now the textfield is locked and the combobox give the potential teams choices according to the player's age and gender<br>
-3. Also provide the demo function to register or unregister a coach(represented by a coach account.<br>
-4. schedules: to display and change the time for matches schedules.<br><br>
+3. Also provide the demo function to register or unregister a coach(represented by a coach account.<br><br>
+
+2.3)schedules: to display and change the time for matches schedules.<br><br>
 
 2.4)accounts: to add,delete or edit accounts information.<br>
 1. The id and usernames are required to be unique<br>
