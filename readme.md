@@ -18,7 +18,7 @@ Note: 2.1.1)Player's team information cannot be changed here.<br>
 
 2.2)teams:  to display member list of each team and register a player to a team or unregister a player from current team.<br>
 Note: 2.2.1)First step is to search a player by id<br>
-     &nbsp;&nbsp; &nbsp;&nbsp;  &nbsp;&nbsp; 2.2.2)If the player dosn't exist, you can start new search<br>
+     &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp; 2.2.2)If the player dosn't exist, you can start new search<br>
            2.2.3)If the player is unregistered, now the textfield is locked and the combobox <br>
             give the potential teams choices according to the player's age and gender<br>
            2.2.4)You can choose to register the player to a team or click "clear search" to cancel the registration and start a new search<br>
