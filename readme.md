@@ -27,7 +27,7 @@
 2. In "edit" mode, you can only change the password<br>
 
 <b>Coach system:</b><br>
-1. Click user namme and send a email<br>
+ Click user namme and send a email<br>
 
 <b>Login Page:</b><br>
 ![Screenshot](login.png)<br>
