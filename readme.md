@@ -6,7 +6,7 @@ Systems login:<br>
   &nbsp;&nbsp; 2,coach,binu,coach <-username:coach;password:binu;can be used to login to Coach system;<br>
   
 Admin system:<br> 
-(After clicking "save" in each screen, the corresponding data changes will be saved to data file)<br>
+(After clicking "save" in each screen, the corresponding data changes will be saved to data file)<br><br>
     2) In Admin system main menu, you can choose one of four functions<br>
     
 2.1)players: to display, add, delete, or edit player information.<br> 
@@ -18,8 +18,7 @@ Admin system:<br>
 2.2)teams:  to display member list of each team and register a player to a team or unregister a player from current team.<br>
 1. First step is to search a player by id<br>
 2. If the player is unregistered, now the textfield is locked and the combobox give the potential teams choices according to the player's age and gender<br>
-3. Also provide the demo function to register or unregister a coach(represented by a coach account.<br><br>
-   
+3. Also provide the demo function to register or unregister a coach(represented by a coach account.<br>
 4. schedules: to display and change the time for matches schedules.<br><br>
 
 2.4)accounts: to add,delete or edit accounts information.<br>
