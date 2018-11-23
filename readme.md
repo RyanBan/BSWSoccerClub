@@ -39,4 +39,4 @@ Note: 2.4.1) The id and usernames are required to be unique
  
 Coach system:
 Click user namme and send a email.
-![Screenshot](login.jpg)
+![Screenshot](login.png)
