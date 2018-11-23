@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="prog24178.project.FXMLTeamsController">
+   <top>
+      <HBox alignment="CENTER" prefHeight="40.0" prefWidth="900.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btSave" maxWidth="600.0" mnemonicParsing="false" onAction="#btSaveHandler" prefHeight="0.0" prefWidth="600.0" text="SAVE CHANGES TO FILE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="btBack" maxHeight="37.0" maxWidth="300.0" mnemonicParsing="false" onAction="#btBackHandler" prefHeight="37.0" prefWidth="300.0" text="BACK TO MAIN MENU">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </top>
+   <bottom>
+      <VBox alignment="CENTER" prefHeight="30.0" prefWidth="901.0" BorderPane.alignment="CENTER">
+         <children>
+            <Line endX="900.0" stroke="#c6cacd" />
+            <Label alignment="CENTER" text="Teams Management" textAlignment="CENTER">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </bottom>
+   <left>
+      <VBox alignment="CENTER" prefHeight="530.0" prefWidth="200.0" spacing="5.0" style="-fx-border-color: dodgerblue;" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="lbStatus" alignment="CENTER" prefHeight="48.0" prefWidth="198.0" text="Status:" textFill="RED" />
+            <Button fx:id="btClear" mnemonicParsing="false" onAction="#btClearHandler" prefHeight="25.0" prefWidth="184.0" text="Clear Search" />
+            <Label text="Unregistered Players">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <TableView fx:id="tableURPlayers" prefHeight="196.0" prefWidth="198.0">
+              <columns>
+                <TableColumn fx:id="colUrpId" prefWidth="65.0" text="ID" />
+                <TableColumn fx:id="colUrpName" prefWidth="129.0" text="Name" />
+              </columns>
+            </TableView>
+            <Label text="Coaches">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <TableView fx:id="tableCoachAcc" prefHeight="198.0" prefWidth="198.0">
+              <columns>
+                <TableColumn fx:id="colCoach" prefWidth="199.0" text="Coach Account User Name" />
+              </columns>
+            </TableView>
+         </children></VBox>
+   </left>
+   <center>
+      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="200.0" spacing="5.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="50.0" prefWidth="180.0" text="Search player first, then register&#10;or unregister the player  " />
+            <HBox alignment="CENTER" prefHeight="29.0" prefWidth="200.0" spacing="5.0">
+               <children>
+                  <Label prefHeight="27.0" prefWidth="60.0" text="Player ID" />
+                  <TextField fx:id="tfPlayerId" prefHeight="25.0" prefWidth="108.0" />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </HBox>
+            <Button fx:id="btSearchPlayer" mnemonicParsing="false" onAction="#btSearchPlayerHandler" text="Search Player" />
+            <GridPane>
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="89.0" minWidth="10.0" prefWidth="64.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="131.0" minWidth="10.0" prefWidth="126.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label prefHeight="17.0" prefWidth="45.0" text="Name:" />
+                  <Label prefHeight="17.0" prefWidth="70.0" text="BirthYear:" GridPane.rowIndex="1" />
+                  <Label prefHeight="17.0" prefWidth="56.0" text="Gender:" GridPane.rowIndex="2" />
+                  <Label prefHeight="17.0" prefWidth="54.0" text="Team:" GridPane.rowIndex="3" />
+                  <ComboBox fx:id="cboTeamsforPlayer" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Label fx:id="lbName" prefHeight="17.0" prefWidth="126.0" GridPane.columnIndex="1" />
+                  <Label fx:id="lbYear" prefHeight="17.0" prefWidth="132.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label fx:id="lbGender" prefHeight="17.0" prefWidth="121.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </GridPane>
+            <HBox alignment="CENTER" prefHeight="29.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <Button fx:id="btPlayerR" disable="true" mnemonicParsing="false" onAction="#btPlayerRegister" text="Register" />
+                  <Button fx:id="btPlayerUR" disable="true" mnemonicParsing="false" onAction="#btPlayerUnRegister" text="Unregister" />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </HBox>
+            <Label prefHeight="47.0" prefWidth="190.0" text="Search coach first, then register &#10;or unregister the coach " />
+            <Label prefHeight="17.0" prefWidth="150.0" text="Coach Account User Name:" />
+            <TextField fx:id="tfCoach" />
+            <Button fx:id="btSearchCoach" mnemonicParsing="false" onAction="#btSearchCoach" text="Search Coach" />
+            <HBox alignment="CENTER" prefHeight="38.0" prefWidth="190.0" spacing="25.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="44.0" text="Team:" />
+                  <ComboBox fx:id="cboTeamsforCoach" prefHeight="25.0" prefWidth="121.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="29.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <Button fx:id="btCoachR" disable="true" mnemonicParsing="false" onAction="#btCoachRegister" text="Register" />
+                  <Button fx:id="btCoachUR" disable="true" mnemonicParsing="false" onAction="#btCoachUnregister" text="Unregister" />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding></VBox>
+   </center>
+   <right>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="500.0" style="-fx-border-color: dodgerblue;" BorderPane.alignment="CENTER">
+         <children>
+            <ComboBox fx:id="cboGroups" onAction="#cboDisplay" prefWidth="150.0" />
+            <HBox prefHeight="294.0" prefWidth="500.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="125.0" spacing="10.0">
+                     <children>
+                        <Label text="Team A" />
+                        <Label text="Coach:" />
+                        <Label fx:id="lbTAcoach" text="Label" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="125.0" spacing="10.0">
+                     <children>
+                        <Label text="Team B" />
+                        <Label text="Coach:" />
+                        <Label fx:id="lbTBcoach" text="Label" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="125.0" spacing="10.0">
+                     <children>
+                        <Label text="Team C" />
+                        <Label text="Coach:" />
+                        <Label fx:id="lbTCcoach" text="Label" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="125.0" spacing="10.0">
+                     <children>
+                        <Label text="Team D" />
+                        <Label text="Coach:" />
+                        <Label fx:id="lbTDcoach" text="Label" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="575.0" prefWidth="500.0">
+               <children>
+                  <TableView fx:id="tableTA" prefHeight="200.0" prefWidth="200.0">
+                    <columns>
+                      <TableColumn fx:id="colTaId" prefWidth="60.0" text="ID" />
+                      <TableColumn fx:id="colTaName" text="Name" />
+                    </columns>
+                  </TableView>
+                  <TableView fx:id="tableTB" prefHeight="200.0" prefWidth="200.0">
+                    <columns>
+                      <TableColumn fx:id="colTbId" prefWidth="60.0" text="ID" />
+                      <TableColumn fx:id="colTbName" text="Name" />
+                    </columns>
+                  </TableView>
+                  <TableView fx:id="tableTC" prefHeight="200.0" prefWidth="200.0">
+                    <columns>
+                      <TableColumn fx:id="colTcId" prefWidth="60.0" text="ID" />
+                      <TableColumn fx:id="colTcName" text="Name" />
+                    </columns>
+                  </TableView>
+                  <TableView fx:id="tableTD" prefHeight="200.0" prefWidth="200.0">
+                    <columns>
+                      <TableColumn fx:id="colTdId" prefWidth="60.0" text="ID" />
+                      <TableColumn fx:id="colTdName" text="Name" />
+                    </columns>
+                  </TableView>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets top="5.0" />
+         </padding></VBox>
+   </right>
+</BorderPane>
