@@ -24,6 +24,25 @@ Admin system:<br>
 
 2.4)accounts: to add,delete or edit accounts information.<br>
 1. The id and usernames are required to be unique<br>
-2. In "edit" mode, you can only change the password<br>
+2. In "edit" mode, you can only change the password<br><br.
 
-![Screenshot](login.png)<br><br>
+<b>Login Page:</b><br>
+![Screenshot](login.png)<br>
+
+<b>Player Page:</b><br>
+![Screenshot](player.png)<br>
+
+<b>Teams Page:</b><br>
+![Screenshot](teams.png)<br>
+
+<b>Schedule Page:</b><br>
+![Screenshot](schedule.png)<br>
+
+<b>Account Page:</b><br>
+![Screenshot](account.png)<br>
+
+<b>Coach Page_email:</b><br>
+![Screenshot](email.png)<br>
+
+<b>Success_email:</b><br>
+![Screenshot](success.png)<br>
